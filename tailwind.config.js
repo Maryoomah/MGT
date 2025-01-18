@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./output/*.{html,js}"],
+  content: [
+    './src/**/*.{css}', 
+    './output/**/*.{html,js,css}'  
+  ],
   theme: {
     extend: {
       transitionProperty: {
@@ -11,3 +14,4 @@ module.exports = {
   },
   plugins: [],
 };
+
