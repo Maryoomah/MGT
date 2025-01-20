@@ -7,6 +7,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="/output/output.css" />
     <title>Contact</title>
   </head>
@@ -16,7 +18,11 @@
       <div class="flex justify-between items-center">
         <!-- Logo Section -->
         <div class="flex mr-10">
-          <img src="images/index.png" alt="Company Logo" class="h-10 ml-4 lg:ml-32" />
+          <img
+            src="images/index.png"
+            alt="Company Logo"
+            class="h-10 ml-4 lg:ml-32"
+          />
           <h1 class="font-bold text-2xl ml-3">
             <span class="text-blue-500">Madoms</span> Global
             <span class="text-blue-500">Trade</span>
@@ -40,9 +46,11 @@
               <a href="about.html" class="hover:text-blue-500 mr-8">About</a>
             </li>
             <li class="relative mr-8">
-              <div  class="flex items-center">
+              <div class="flex items-center">
                 <button><a href="services.html">Services </a></button>
-               <button> <i id="dropdownToggle" class="fas fa-chevron-down ml-2"></i> </button>
+                <button>
+                  <i id="dropdownToggle" class="fas fa-chevron-down ml-2"></i>
+                </button>
               </div>
               <!-- Dropdown Menu -->
               <ul
@@ -145,7 +153,9 @@
           cols="5"
           class="w-full border p-3 rounded-lg m-3"
         ></textarea>
-        <button class="bg-white text-gray-700 font-bold p-5 ml-3 rounded-lg hover:bg-blue-800 hover:text-white">
+        <button
+          class="bg-white text-gray-700 font-bold p-5 ml-3 rounded-lg hover:bg-blue-800 hover:text-white"
+        >
           Send a Message
         </button>
       </form>
@@ -189,7 +199,8 @@
           <textarea
             name=""
             id=""
-            placeholder="Type your message here" cols="23"
+            placeholder="Type your message here"
+            cols="23"
             class="rounded-lg border-blue-600 block text-gray-950 p-2"
           ></textarea>
           <button class="mt-4 px-8 py-1 rounded-xl bg-blue-700">Send</button>
@@ -230,7 +241,8 @@
       <p
         class="absolute bottom-0 left-0 w-full text-center bg-blue-700 px-5 py-3 text-white"
       >
-      © <span id="year"></span>  Madoms Global Trade.  All rights reserved.</p>      </p>
+        © <span id="year"></span> Madoms Global Trade. All rights reserved.
+      </p>
     </div>
     <script src="script.js"></script>
   </body>
