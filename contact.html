@@ -132,8 +132,9 @@
     </div>
 
     <!-- form  -->
-    <div class="max-w-3xl mx-auto my-20">
-      <form action="" class="bg-blue-700 p-10 rounded-lg">
+    <div class="max-w-lg sm:max-w-xl md:max-w-3xl mx-auto my-10">
+
+      <form action="" class="bg-blue-700 p-5 sm:p-8 md:p-10 rounded-lg">
         <h1 class="text-3xl font-bold mb-5 text-white">
           Want to Leave us a Message?
         </h1>
@@ -141,24 +142,29 @@
         <label for="name" class="block text-white ml-5 text-lg font-semibold"
           >Name</label
         >
-        <input type="text" class="w-full border p-3 rounded-lg m-3" />
-        <label for="" class="block text-white ml-5 text-lg">Phone Number</label>
-        <input type="text" class="w-full border p-3 rounded-lg m-3" />
+        <input id="name" type="text" class="w-full border p-3 rounded-lg my-3"   placeholder="Enter your name"
+        >
+        <label for="phone" class="block text-white ml-5 text-lg">Phone Number</label>
+        <input id="phone" type="text" class="w-full border p-3 rounded-lg my-3"   placeholder="Enter your phone number"
+        >
         <label for="email" class="block text-white ml-5 text-lg"
           >Email Address</label
         >
-        <input type="mail" class="w-full border p-3 rounded-lg m-3" />
+        <input id="email" type="text" class="w-full border p-3 rounded-lg my-3"   placeholder="Enter your email address"
+        >
         <label for="" class="block text-white ml-5 text-lg">Message</label>
         <textarea
           name=""
           id=""
           rows="10"
           cols="5"
-          class="w-full border p-3 rounded-lg m-3"
+          class="w-full border p-3 rounded-lg m-3"   placeholder="Enter your message"
+
         ></textarea>
         <button
-          class="bg-white text-gray-700 font-bold p-5 ml-3 rounded-lg hover:bg-blue-800 hover:text-white"
-        >
+        class="bg-white text-gray-700 font-bold px-4 py-3 md:px-5 md:py-4 ml-3 rounded-lg hover:bg-blue-800 hover:text-white"
+      >
+      
           Send a Message
         </button>
       </form>
