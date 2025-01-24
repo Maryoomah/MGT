@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="/output/output.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Home</title>
   </head>
   <body>
@@ -18,16 +18,19 @@
     <div class="p-8 bg-white shadow-md">
       <div class="flex justify-between items-center">
         <!-- Logo Section -->
-        <div class="flex items-center">
-          <img
-            src="images/index.png"
-            alt="Company Logo"
-            class="h-10 ml-4 lg:ml-32"
-          />
-          <h1 class="font-bold text-2xl ml-3">
-            <span class="text-blue-500">Madoms</span> Global
-            <span class="text-blue-500">Trade</span>
-          </h1>
+        <div>
+          <a href="index.html" class="flex mr-10">
+            <img
+              src="images/index.png"
+              alt="Company Logo"
+              class="h-10 ml-4 lg:ml-32"
+            />
+
+            <h1 class="font-bold text-2xl ml-3">
+              <span class="text-blue-500">Madoms</span> Global
+              <span class="text-blue-500">Trade</span>
+            </h1>
+          </a>
         </div>
         <div class="block">
           <!-- Hamburger Menu Icon -->
@@ -307,44 +310,61 @@
 
     <!-- why choose mgt -->
     <div class="bg-[rgba(201,201,178,0.5)]">
-      <div class="mt-28 max-w-2xl mx-auto py-10">
+      <div class="mt-28 mx-32 py-10">
         <h1 class="text-3xl text-blue-700 font-bold mb-10 text-center">
           Why Choose MGT?
         </h1>
-        <!-- item -->
-        <div
-          class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-        >
-          <i class="fa-solid fa-thumbs-up text-6xl text-white"></i>
-          <h2 class="text-lg font-bold text-white">We are Trusted</h2>
-        </div>
-        <!-- item -->
-        <div
-          class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-        >
-          <i class="fa-solid fa-headset text-6xl text-white"></i>
-          <h2 class="text-lg font-bold text-white">All-round Support</h2>
-        </div>
-        <!-- item -->
-        <div
-          class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-        >
-          <i class="fa-solid fa-truck-fast text-6xl text-white"></i>
-          <h2 class="text-lg font-bold text-white">Fast Delivery</h2>
-        </div>
-        <!-- item -->
-        <div
-          class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-        >
-          <i class="fa-solid fa-award text-6xl text-white"></i>
-          <h2 class="text-lg font-bold text-white">100% Guarantee</h2>
-        </div>
-        <!-- item -->
-        <div
-          class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-        >
-          <i class="fa-solid fa-user-group text-6xl text-white"></i>
-          <h2 class="text-lg font-bold text-white">Highly Dedicated Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- item -->
+          <div
+            class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+          >
+            <i class="fa-solid fa-thumbs-up text-6xl text-white"></i>
+            <h2 class="text-lg font-bold text-white">We are Trusted</h2>
+          </div>
+          <!-- item -->
+          <div
+            class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+          >
+            <i class="fa-solid fa-headset text-6xl text-white"></i>
+            <h2 class="text-lg font-bold text-white">All-round Support</h2>
+          </div>
+          <!-- item -->
+          <div
+            class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+          >
+            <i class="fa-solid fa-truck-fast text-6xl text-white"></i>
+            <h2 class="text-lg font-bold text-white">Fast Delivery</h2>
+          </div>
+          <!-- item -->
+          <div
+            class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+          >
+            <i class="fa-solid fa-award text-6xl text-white"></i>
+            <h2 class="text-lg font-bold text-white">100% Guarantee</h2>
+          </div>
+          <!-- item -->
+          <div
+            class="flex items-center gap-6 mb-6 p-5 bg-blue-900 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+          >
+            <i class="fa-solid fa-user-group text-6xl text-white"></i>
+            <h2 class="text-lg font-bold text-white">Highly Dedicated Team</h2>
+          </div>
+          <div class="hidden lg:block">
+            <a href="index.html">
+              <button
+                class="bg-blue-900 text-white text-5xl p-5 mb-6 rounded-xl ml-20 mr-5"
+              >
+                <i class="fa-solid fa-arrow-up"></i></button
+            ></a>
+
+            <a href="#testimonial-container"
+              ><button
+                class="bg-blue-900 text-white text-5xl p-5 mb-6 rounded-xl"
+              >
+                <i class="fa-solid fa-arrow-down"></i></button
+            ></a>
+          </div>
         </div>
       </div>
     </div>
@@ -353,10 +373,13 @@
       <h2 class="text-3xl font-extrabold text-center mb-12 text-blue-800">
         Key Metrics at a Glance
       </h2>
-      <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-7 mx-32">
+      <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-7 mx-20 lg:mx-32">
         <!-- Card 1 -->
         <div class="text-center p-20 bg-white rounded-lg shadow-md relative">
-          <div class="card-background"></div>
+          <div
+            class="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg"
+            style="background-image: url('images/logistics.jpg')"
+          ></div>
           <div class="relative z-10">
             <h6 class="text-5xl font-bold text-blue-700">50+</h6>
             <p class="font-bold text-blue-700">Initiated Projects</p>
@@ -364,7 +387,10 @@
         </div>
         <!-- Card 2 -->
         <div class="text-center p-20 bg-white rounded-lg shadow-md relative">
-          <div class="card-background"></div>
+          <div
+            class="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg"
+            style="background-image: url('images/logistics.jpg')"
+          ></div>
           <div class="relative z-10">
             <h6 class="text-5xl font-bold text-blue-700">50</h6>
             <p class="font-bold text-blue-700">Successful Projects</p>
@@ -372,7 +398,10 @@
         </div>
         <!-- Card 3 -->
         <div class="text-center p-20 bg-white rounded-lg shadow-md relative">
-          <div class="card-background"></div>
+          <div
+            class="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg"
+            style="background-image: url('images/logistics.jpg')"
+          ></div>
           <div class="relative z-10">
             <h6 class="text-5xl font-bold text-blue-700">30+</h6>
             <p class="font-bold text-blue-700">Satisfied Customers</p>
@@ -517,41 +546,6 @@
       <footer
         class="relative grid grid-cols-1 md:grid-cols-3 gap-4 pb-10 text-white"
       >
-        <form class="pl-5">
-          <h1 class="text-xl font-bold mb-5">Let's Hear from You</h1>
-          <label for="" class="block text-lg">Name</label>
-          <input
-            type="text"
-            class="rounded-lg border-blue-600 p-2 text-gray-950"
-          />
-          <br />
-          <br />
-          <label for="" class="block text-lg">Phone Number</label>
-          <input
-            type="text"
-            name=""
-            id=""
-            class="rounded-lg border-blue-600 p-2 text-gray-950"
-          />
-          <br />
-          <br />
-          <label for="" class="block text-lg">Email Address</label>
-          <input
-            type="email"
-            class="rounded-lg border-blue-600 p-2 text-gray-950"
-          />
-          <br />
-          <br />
-          <label for="Message" class="block text-lg">Messsage</label>
-          <textarea
-            name=""
-            id=""
-            placeholder="Type your message here"
-            cols="23"
-            class="rounded-lg border-blue-600 block text-gray-950 p-2"
-          ></textarea>
-          <button class="mt-4 px-8 py-1 rounded-xl bg-blue-700">Send</button>
-        </form>
         <div>
           <h1 class="text-xl font-bold">Contact Details</h1>
           <div class="flex mt-5 items-center mb-10">
@@ -583,6 +577,27 @@
             <a href="news.html" class="mt-5 hover:underline">News</a>
             <a href="contact.html" class="mt-5 hover:underline">Contact</a>
           </nav>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold">Keep in Touch</h1>
+
+          <input
+            type="email"
+            placeholder="enter your email..."
+            class="my-8 py-3 px-4 rounded-full text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Enter your message..."
+              class="w-full py-3 px-4 rounded-full text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
         </div>
       </footer>
       <p

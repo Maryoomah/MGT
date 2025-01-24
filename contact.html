@@ -17,16 +17,19 @@
     <div class="p-8 bg-white shadow-md">
       <div class="flex justify-between items-center">
         <!-- Logo Section -->
-        <div class="flex mr-10">
-          <img
-            src="images/index.png"
-            alt="Company Logo"
-            class="h-10 ml-4 lg:ml-32"
-          />
-          <h1 class="font-bold text-2xl ml-3">
-            <span class="text-blue-500">Madoms</span> Global
-            <span class="text-blue-500">Trade</span>
-          </h1>
+        <div>
+          <a href="index.html" class="flex mr-10">
+            <img
+              src="images/index.png"
+              alt="Company Logo"
+              class="h-10 ml-4 lg:ml-32"
+            />
+
+            <h1 class="font-bold text-2xl ml-3">
+              <span class="text-blue-500">Madoms</span> Global
+              <span class="text-blue-500">Trade</span>
+            </h1>
+          </a>
         </div>
         <div class="block">
           <!-- Hamburger Menu Icon -->
@@ -160,6 +163,17 @@
         </button>
       </form>
     </div>
+    <div class="w-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63413.39202775475!2d3.3456840000000003!3d6.604978!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b924c2e750a45%3A0xa7634701f0882ebf!2sOregun%2C%20Lagos!5e0!3m2!1sen!2sng!4v1737711999569!5m2!1sen!2sng"
+        width="1350"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
     <!-- footer -->
     <div
       class="relative bg-cover bg-center p-8"
@@ -168,43 +182,8 @@
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <footer
-        class="relative grid grid-cols-1 md:grid-cols-3 gap-4 text-white pb-10"
+        class="relative grid grid-cols-1 md:grid-cols-3 gap-4 pb-10 text-white"
       >
-        <form class="pl-5">
-          <h1 class="text-xl font-bold mb-5">Let's Hear from You</h1>
-          <label for="" class="block text-lg">Name</label>
-          <input
-            type="text"
-            class="rounded-lg border-blue-600 p-2 text-gray-950"
-          />
-          <br />
-          <br />
-          <label for="" class="block text-lg">Phone Number</label>
-          <input
-            type="text"
-            name=""
-            id=""
-            class="rounded-lg border-blue-600 p-2 text-gray-950"
-          />
-          <br />
-          <br />
-          <label for="" class="block text-lg">Email Address</label>
-          <input
-            type="email"
-            class="rounded-lg border-blue-600 p-2 text-gray-950"
-          />
-          <br />
-          <br />
-          <label for="Message" class="block text-lg">Messsage</label>
-          <textarea
-            name=""
-            id=""
-            placeholder="Type your message here"
-            cols="23"
-            class="rounded-lg border-blue-600 block text-gray-950 p-2"
-          ></textarea>
-          <button class="mt-4 px-8 py-1 rounded-xl bg-blue-700">Send</button>
-        </form>
         <div>
           <h1 class="text-xl font-bold">Contact Details</h1>
           <div class="flex mt-5 items-center mb-10">
@@ -236,6 +215,27 @@
             <a href="news.html" class="mt-5 hover:underline">News</a>
             <a href="contact.html" class="mt-5 hover:underline">Contact</a>
           </nav>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold">Keep in Touch</h1>
+
+          <input
+            type="email"
+            placeholder="enter your email..."
+            class="my-8 py-3 px-4 rounded-full text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Enter your message..."
+              class="w-full py-3 px-4 rounded-full text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
         </div>
       </footer>
       <p
